@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Fusion</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-stone-200 flex flex-col">
+  <section id="carrinho"
+    class="fixed top-0 right-[-360px] bg-gray-300 h-screen w-[360px] text-neutral-800 z-50 duration-200 border-l-2 border-neutral-800 p-5 flex flex-col justify-between">
+    <div id="cabecalhoCarrinho" class="flex justify-between m-3">
+      <p>Sacola de Compras</p>
+      <button id="fecharCarrinho">
+        <i class="fa-solid fa-circle-xmark text-slate-500 hover:text-slate-900"></i>
+      </button>
+    </div>
+    <section id="produtos-carrinho">
+
+    </section>
+    <p id="preco-total">R$200</p>
+    <button class="bg-slate-200 p-2">Finalizar Compra</button>
+  </section>
+  <header class="flex  justify-between bg-gray-300 px-8 py-4 sticky top-0 shadow-slate-900 shadow-md z-10">
+    <img class="h-10 p-1" src="./assets/logo.png" alt="Logo da Loja" />
+    <div class="flex gap-4 items-center text-neutral-800">
+      <button class="mx-2">
+        <i class="fa-solid fa-user" style="color: #000000"></i>
+      </button>
+      <button id="abrirCarrinho" class="mr-2">
+        <i class="fa-solid fa-cart-shopping" style="color: #000000"> </i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="container-produto" class="flex flex-wrap p-10 justify-center gap-10"></section>
+  </main>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
